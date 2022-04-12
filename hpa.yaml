@@ -3,7 +3,7 @@ apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: hpa-practive
-  namespace: hello
+  namespace: hello-namespace
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
