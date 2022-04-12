@@ -3,13 +3,13 @@ apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: hpa-practive
-  namespace: hello-namespace
+  namespace: hello
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
     name: helloweb
-  minReplicas: 2
+  minReplicas: 1
   maxReplicas: 4
   behavior:
     scaleDown:

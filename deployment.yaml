@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: helloweb
-  namespace: hello-namespace
+  namespace: hello
   labels:
     app: hello
 spec:
@@ -18,9 +18,9 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: gcr.io/google-samples/hello-app:1.0
+        image: nginx
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         resources:
           requests:
             cpu: 200m
