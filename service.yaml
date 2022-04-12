@@ -15,4 +15,4 @@ spec:
     port: 8029
     targetPort: 80
     #nodePort: 30082
-    type: LoadBalancer
+  type: LoadBalancer
